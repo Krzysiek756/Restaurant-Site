@@ -1,0 +1,196 @@
+ion-icon {
+    pointer-events: none;
+}
+
+address {
+    font-style: normal;
+}
+
+html {
+    font-family: $ff-roboto;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $white;
+    color: $sonic-silver;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    overflow-x: hidden;
+
+}
+
+body.active {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+:focus-visible {
+    outline-offset: 4px;
+}
+
+::selection {
+    background-color: $deep-saffron;
+    color: $white;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $cultured;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $deep-saffron;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $tangerine;
+}
+
+/*********************Heder Navbar*********************/
+/*********************Heder Navbar*********************/
+/*********************Heder Navbar*********************/
+
+// .nav__menu,
+// .nav-toggle-btn,
+// .btn {
+//     display: none;
+// }
+
+.header {
+
+
+    color: $white;
+    background-color: $champagne-pink;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-block: 20px;
+    border-block-end: 1px solid $champagne-pink_20;
+    z-index: 4;
+
+    &.active {
+        color: $rich-black-fogra-29;
+        background-color: $rich-black-fogra-29;
+
+        position: fixed;
+        top: -86px;
+        background-color: $champagne-pink;
+        box-shadow: $shadow-1;
+        animation: slideIn 0.5s ease-out forwards;
+    }
+
+    &__content {
+        padding-inline: 15px;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
+
+    &__logo {
+
+        color: $white;
+        font-family: $ff-rubik;
+        font-size: 2.8rem;
+        font-weight: $fw-700;
+        letter-spacing: -2px;
+
+        a {
+            display: flex;
+        }
+
+        span {
+            display: inline-block;
+            color: $deep-saffron;
+        }
+    }
+
+    &__btn-group {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+
+        .search-btn {
+            i {
+                color: $onyx;
+                font-size: 20px;
+            }
+        }
+
+
+
+    }
+
+    .nav-toggle-btn {
+        display: grid;
+        gap: 4px;
+
+        .line {
+            width: 10px;
+            height: 3px;
+            background-color: $onyx;
+            border-radius: 5px;
+            transition: $transition-1;
+
+            &.middle {
+                width: 20px;
+            }
+
+            &.bottom {
+                margin-left: auto;
+            }
+
+        }
+
+        &.active {
+
+            .line {
+
+                &.top {
+
+                    transform: translate(1px, 3px) rotate(45deg);
+                }
+
+                &.middle {
+
+                    transform: rotate(-45deg);
+                }
+
+                &.bottom {
+
+                    transform: translate(-1px, -3px) rotate(45deg);
+                }
+            }
+        }
+    }
+
+
+}
+
+
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
