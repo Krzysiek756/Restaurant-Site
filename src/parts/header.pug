@@ -1,43 +1,42 @@
-//- header.header(data-header='')
-//-     .container 
-//-         .row
-//-             .header__content
-//-                 .header__logo 
-//-                         a(href="index.html") 
-//-                             .logo__title Foodie 
-//-                             span .
-//-                 .menu(data-navbar='')
-//-                     .menu__list
-//-                         .menu__item 
-//-                             a(href="#home" data-nav-link="") Home
-//-                         .menu__item 
-//-                             a(href="#about" data-nav-link="") About Us
-//-                         .menu__item 
-//-                             a(href="$food-menu" data-nav-link="") Food Menu
-//-                         .menu__item 
-//-                             a(href="#blog" data-nav-link="") Blog
-//-                         .menu__item 
-//-                             a(href="#" data-nav-link="") Contact Us    
-//-                 .header__btn-group
-//-                         .search-btn(arial-lebel="Search" data-search-btn='')
-//-                             i.icon__search.ri-search-line      
-//-                         .btn.btn-hover 
-//-                             span Reservation   
-//-                         .nav-toggle-btn(arial-lebel="Toggle Menu" data-menu-toggle-btn="") 
-//-                             span.line.top 
-//-                             span.line.middle    
-//-                             span.line.bottom     
+header.header(data-header='')
+    .container 
+        .row
+            .header__content
+                .header__logo 
+                        a(href="index.html") 
+                            .logo__title Foodie 
+                            span .
+                .menu(data-navbar='')
+                    .menu__list
+                        .menu__item 
+                            a(href="#home" data-nav-link="") Home
+                        .menu__item 
+                            a(href="#about" data-nav-link="") About Us
+                        .menu__item 
+                            a(href="$food-menu" data-nav-link="") Food Menu
+                        .menu__item 
+                            a(href="#blog" data-nav-link="") Blog
+                        .menu__item 
+                            a(href="#" data-nav-link="") Contact Us    
+                .header__btn-group
+                        .search-btn(arial-lebel="Search" data-search-btn='')
+                            i.icon__search.ri-search-line      
+                        .btn.btn-hover 
+                            span Reservation   
+                        .nav-toggle-btn(arial-lebel="Toggle Menu" data-menu-toggle-btn="") 
+                            span.line.top 
+                            span.line.middle    
+                            span.line.bottom     
 //Search Box
-.search.active(data-search-container='')
+.search
    .container 
         .row 
-            .search__content.active
+            .search__content(data-search-container='')
                 .search__form 
                     input.search-input(type='search' name='search' aria-label='Search here' placeholder='Type keywords here...')
                     button.search-submit(aria-label='Submit search' data-search-submit-btn='')
-                        i.icon__search.ri-search-line(name='search-outline')
-                button.search-close-btn(aria-label='Cancel search' data-search-close-btn='') 
-                    
-                                    
+                      i.ri-search-line(name='search-outline')
+                button.search-close-btn(aria-label='Cancel search' data-search-close-btn='')
+                                        
 
                         
