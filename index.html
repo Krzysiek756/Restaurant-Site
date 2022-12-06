@@ -11,28 +11,20 @@
   </head>
   <body>
     <!--HEADER-->
-    <header class="header active" data-header="">
+    <!--Search Box-->
+    <div class="search active" data-search-container="">
       <div class="container"> 
-        <div class="row">
-          <div class="header__content">
-            <div class="header__logo"> <a href="index.html"> 
-                <div class="logo__title">Foodie </div><span>.</span></a></div>
-            <div class="nav__menu" data-navbar="">
-              <div class="menu__item"> <a href="index.html">Home</a></div>
-              <div class="menu__item"> <a href="index.html">About Us</a></div>
-              <div class="menu__item"> <a href="index.html">Shop</a></div>
-              <div class="menu__item"> <a href="index.html">Blog</a></div>
-              <div class="menu__item"> <a href="index.html">Contact Us    </a></div>
+        <div class="row"> 
+          <div class="search__content active">
+            <div class="search__form"> 
+              <input class="search-input" type="search" name="search" aria-label="Search here" placeholder="Type keywords here...">
+              <button class="search-submit" aria-label="Submit search" data-search-submit-btn=""><i class="icon__search ri-search-line" name="search-outline"></i></button>
             </div>
-            <div class="header__btn-group">
-              <div class="search-btn" arial-lebel="Search" data-search-btn><i class="icon__search ri-search-line">     </i></div>
-              <div class="btn btn-hover"> <span>Reservation   </span></div>
-              <div class="nav-toggle-btn active" arial-lebel="Toggle Menu" data-nav-toggle-btn> <span class="line top"> </span><span class="line middle">   </span><span class="line bottom">      </span></div>
-            </div>
+            <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn=""> </button>
           </div>
         </div>
       </div>
-    </header>
+    </div>
     <!--CONTENT-->
     <!--FOOTER-->
     <script src="/assets/js/main.min.js"></script>
