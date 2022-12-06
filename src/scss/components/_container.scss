@@ -21,6 +21,44 @@
 
 
 
+        @include sm {
+            max-width: 400px;
+            padding: 0 15px;
+            align-self: center;
+        }
+
+
+        @include md {
+            position: relative;
+            text-align: left;
+            overflow: hidden;
+            z-index: 1;
+            margin-top: 25px;
+            margin-inline: 0;
+
+            padding: 0 20px;
+        }
+
+        // @include lg {
+        //     padding: 0;
+        // }
+
+
+
+    }
+
+    &__banner {
+        display: none;
+
+
+        @include md {
+            display: block;
+            position: absolute;
+            top: calc(50% + 86px);
+            transform: translateY(-50%);
+        }
+
+
     }
 
     &__text {
@@ -29,6 +67,11 @@
         gap: 30px;
         flex-direction: column;
         align-items: center;
+        background-color: yellowgreen;
+
+        @include md {
+            align-items: flex-start;
+        }
 
 
     }
@@ -39,6 +82,12 @@
         font-size: $fs-2;
         letter-spacing: 1px;
 
+        @include sm {
+            font-size: $fs-1;
+        }
+
+
+
 
     }
 
@@ -47,6 +96,11 @@
         font-size: $fs-1;
         margin-inline: auto;
         font-weight: $fw-600;
+
+
+        @include sm {
+            font-size: 4rem;
+        }
 
     }
 
