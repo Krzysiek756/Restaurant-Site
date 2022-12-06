@@ -1,0 +1,58 @@
+/************************Section Hero************************/
+/************************Section Hero************************/
+/************************Section Hero************************/
+
+
+.hero {
+
+    background-image: url('/assets/img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-block: 145px 60px;
+    text-align: center;
+
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 340px;
+        margin-inline: auto;
+
+
+
+    }
+
+    &__text {
+
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    &__subtitle {
+        color: $dark-orange;
+        font-family: $ff-shadows-into-light;
+        font-size: $fs-2;
+        letter-spacing: 1px;
+
+
+    }
+
+    &__title {
+        color: $champagne-pink;
+        font-size: $fs-1;
+        margin-inline: auto;
+        font-weight: $fw-600;
+
+    }
+
+    &__p {
+        color: $desert-sand;
+    }
+
+
+}
