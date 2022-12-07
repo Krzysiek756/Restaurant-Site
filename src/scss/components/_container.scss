@@ -68,15 +68,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
     &__content {
         display: flex;
         justify-content: center;
@@ -267,4 +258,57 @@
     }
 
 
+}
+
+
+/************************Section Promo************************/
+/************************Section Promo************************/
+/************************Section Promo************************/
+
+.promo {
+
+    &__content {
+
+        padding: 40px 0;
+
+
+        @include sm {
+            margin: 0 15px;
+        }
+
+        @include md {
+            margin: 0 20px;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        @include lg {
+            margin: 0;
+        }
+
+
+        @include xl {
+            width: calc(100% + 30px);
+
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        border: 3px solid black;
+        padding: 40px 0;
+        max-width: 360px;
+    }
+
+    .card {
+
+        &__text {
+            max-width: 300px;
+        }
+    }
 }
