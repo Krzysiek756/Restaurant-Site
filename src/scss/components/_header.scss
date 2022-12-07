@@ -152,6 +152,15 @@ a {
 
         @include lg {
             margin: 0;
+
+
+
+        }
+
+
+        @include xl {
+            width: calc(100% + 30px);
+
         }
     }
 
