@@ -1,3 +1,43 @@
+.has-scrollbar {
+
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: inline mandatory;
+    padding-bottom: 40px;
+
+    &::-webkit-scrollbar {
+        height: 12px;
+
+    }
+
+    &::-webkit-scrollbar {
+        height: 12px;
+
+    }
+
+    &::-webkit-scrollbar-button {
+        width: calc(25% - 80px);
+    }
+
+    &::-webkit-scrollbar-track {
+        outline: 2px solid $deep-saffron;
+        border-radius: 50px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border: 3px solid $cultured;
+        border-radius: 50px;
+    }
+}
+
+
+
+
+
+
 /************************Section Hero************************/
 /************************Section Hero************************/
 /************************Section Hero************************/
@@ -265,15 +305,21 @@
 /************************Section Promo************************/
 /************************Section Promo************************/
 
+
+
 .promo {
 
-    &__content {
+    background-color: #F9F6F0;
 
-        padding: 40px 0;
+
+    &__content {
+        overflow: hidden;
+
+        padding: 60px 0;
 
 
         @include sm {
-            margin: 0 15px;
+            margin: 0 0px;
         }
 
         @include md {
@@ -288,10 +334,19 @@
 
 
         @include xl {
-            width: calc(100% + 30px);
+            width: calc(100% + 17.0px);
 
         }
     }
+
+    &__item {
+
+
+        @include xl {
+            right-left: 25px;
+        }
+    }
+
 
     &__card {
         display: flex;
@@ -300,15 +355,106 @@
         justify-content: center;
         text-align: center;
         gap: 20px;
-        border: 3px solid black;
         padding: 40px 0;
         max-width: 360px;
+        position: relative;
+
+
+        cursor: pointer;
+
+        background-color: $white;
+        box-shadow: $shadow-2;
+        z-index: 1;
+
+
+        min-width: 100%;
+
+
+        @include sm {
+            min-width: calc(50% - 5px);
+
+        }
+
+        @include lg {
+            min-width: calc(33.33% - 6.66px);
+        }
+
+        @include xl {
+            min-width: calc(25% - 19px);
+        }
+
+        scroll-snap-align: start;
+
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-color: $deep-saffron;
+            clip-path: $clip-path-1;
+            transform: scaleY(0.3);
+            transform-origin: bottom;
+            z-index: -1;
+            transition: $transition-1;
+
+
+        }
+
+        &:hover::after {
+            clip-path: $clip-path-2;
+            transform: scaleY(1);
+
+
+
+        }
+
+        &:hover {
+            color: black;
+
+            .card__icon {
+
+                path {
+                    fill: $white;
+                }
+
+            }
+
+        }
+
+
+
     }
+
+
+
 
     .card {
 
+
+
+
         &__text {
             max-width: 300px;
+
+        }
+
+        &__title {
+            font-family: $ff-rubik;
+            color: $rich-black-fogra-29;
+            font-size: $fs-2;
+            font-weight: $fw-600;
+        }
+
+        &__img {
+
+            height: 260px;
+            padding: 0 30px;
+
+
+
+            img {
+
+                height: 100%;
+            }
         }
     }
 }
