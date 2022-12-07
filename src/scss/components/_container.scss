@@ -5,7 +5,7 @@
 
 .hero {
 
-    background-image: url('/assets/img/hero-bg.jpg');
+    background-image: url('../img/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     padding-block: 145px 60px;
@@ -33,7 +33,7 @@
         bottom: 0;
         width: 100%;
         height: 100%;
-        background-image: url('/assets/img/hero-bg-shape.png');
+        background-image: url('../img/hero-bg-shape.png');
         z-index: 1;
         background-repeat: no-repeat;
         background-size: contain;
