@@ -53,4 +53,38 @@
         }
 
     }
+
+    &--dishes {
+
+        &.active {
+            background-color: $dark-orange;
+            color: $white;
+        }
+
+        color:$black;
+        background-color: $white;
+    }
+
+    &--menu {
+
+        background-color: $cinnabar;
+        opacity: 0;
+
+
+        transform: $transition-1;
+
+
+
+        &:hover {
+            background-color: $dark-orange;
+            color: $white;
+
+            transform: $transition-1;
+        }
+
+
+    }
+
+
+
 }
