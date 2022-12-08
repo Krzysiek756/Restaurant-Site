@@ -58,6 +58,59 @@
 }
 
 
+//Section Wrapper
+
+.section__text-wrapper {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: center;
+    margin: 0 auto;
+
+
+
+    &__title {
+        font-weight: $fw-600;
+        font-size: $fs-1;
+        color: $black_95;
+
+        max-width: 300px;
+        line-height: 40px;
+
+        margin: 0 auto;
+
+
+        @include xl {
+            font-size: 4rem;
+            max-width: 400px;
+            line-height: 50px;
+        }
+
+        span {
+            color: $dark-orange;
+        }
+
+    }
+
+    &__p {
+        max-width: 520px;
+
+
+        @include md {
+            max-width: 480px;
+        }
+
+
+        @include xl {
+            max-width: 555px;
+        }
+
+    }
+}
+
+
 /************************Section Hero************************/
 /************************Section Hero************************/
 /************************Section Hero************************/
@@ -491,12 +544,60 @@
 
         display: flex;
         flex-direction: column;
+        padding: 80px 0;
+
+
+
+
+
+        @include sm {
+            margin: 0 15px;
+        }
+
+        @include md {
+            margin: 0 20px;
+
+            flex-direction: row;
+            gap: 20px;
+
+
+
+        }
+
+        @include lg {
+            margin: 0;
+            gap: 80px;
+
+
+
+
+        }
+
+
+        @include xl {
+
+            justify-content: space-between;
+
+
+        }
+
 
     }
 
     &__banner {
-
+        display: flex;
         position: relative;
+        margin-bottom: 40px;
+
+
+
+
+
+
+
+
+
+
 
 
         .banner__img {
@@ -505,15 +606,35 @@
             width: 100%;
             height: 100%;
 
-            max-width: 450px;
-            max-height: 405px;
+
+
+
+
+            max-width: 500px;
+            max-height: 455px;
             margin: 0 auto;
+
+            object-fit: contain;
+
+
+            @include xl {
+                max-width: 600px;
+                max-height: 555px;
+            }
 
 
             img {
                 object-fit: cover;
                 width: 100%;
                 height: 100%;
+
+
+
+                @include md {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: unset;
+                }
             }
         }
 
@@ -538,7 +659,112 @@
                 height: 100%;
             }
         }
+
+
     }
 
+    &__text {
+
+
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        justify-content: center;
+        align-items: center;
+
+
+
+        @include md {
+            align-items: flex-start;
+        }
+
+        @include lg {
+            align-self: start;
+        }
+
+
+
+
+
+    }
+
+    &__table {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        margin-bottom: 10px;
+
+
+    }
+
+    &__item {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+
+        @include md {
+            text-align: left;
+            justify-content: left;
+            margin-right: auto;
+
+        }
+
+
+
+        i {
+            color: $white;
+            width: 22px;
+            height: 22px;
+            background-color: $dark-orange;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            color: $black;
+            font-weight: $fw-500;
+            letter-spacing: 1.2px;
+
+            @include lg {
+                font-size: $fs-2;
+            }
+        }
+    }
+
+
+    .btn--header {
+
+
+        @include md {
+
+            display: flex;
+            margin-right: auto;
+        }
+    }
+
+
+    .section__text-wrapper {
+
+
+        @include md {
+            text-align: left;
+
+            margin-right: auto;
+
+            &__title {
+
+                margin: unset;
+            }
+        }
+
+
+    }
 
 }
