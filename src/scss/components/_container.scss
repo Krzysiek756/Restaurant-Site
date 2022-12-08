@@ -35,7 +35,27 @@
 
 
 
+//Animation
 
+
+.abs-img {
+    position: absolute;
+    transform: scale(1);
+}
+
+.scale-up-anim {
+    animation: scaleUp 1s linear infinite alternate;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.05);
+    }
+}
 
 
 /************************Section Hero************************/
@@ -457,4 +477,68 @@
             }
         }
     }
+}
+
+
+/************************Section About************************/
+/************************Section About************************/
+/************************Section About************************/
+
+
+.about {
+
+    &__content {
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    &__banner {
+
+        position: relative;
+
+
+        .banner__img {
+
+            display: flex;
+            width: 100%;
+            height: 100%;
+
+            max-width: 450px;
+            max-height: 405px;
+            margin: 0 auto;
+
+
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .banner__wrapper {
+            position: absolute;
+            display: flex;
+            width: 50%;
+            height: 50%;
+            z-index: 2;
+
+
+            max-width: 200px;
+            max-height: 200px;
+
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+
 }
