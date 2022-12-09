@@ -69,7 +69,7 @@ for (let i = 0; i < searchBoxElems.length; i++) {
 
 const deliveryBoy = document.querySelector("[data-delivery-boy]");
 
-let deliveryBoyMove = -80;
+let deliveryBoyMove = 0;
 let lastScrollPos = 0;
 
 window.addEventListener("scroll", function () {

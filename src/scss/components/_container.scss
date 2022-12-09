@@ -1285,7 +1285,7 @@
 
     &__content {
 
-        padding: 80px 0;
+        padding: 80px 0 0 0;
 
 
         @include sm {
@@ -1461,6 +1461,8 @@
         max-height: 880px;
 
 
+
+
         @include md {
 
             transform: translateX(80px);
@@ -1488,4 +1490,153 @@
 
         }
     }
+}
+
+
+/************************Customers Delivery************************/
+/************************Customers Delivery************************/
+/************************Customers Delivery************************/
+
+
+.customers {
+
+    background-color: #F9F6F0;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 0;
+
+
+
+
+
+        @include sm {
+            margin: 0 15px;
+        }
+
+        @include md {
+            margin: 0 20px;
+
+            gap: 20px;
+
+
+
+        }
+
+        @include lg {
+            margin: 0;
+
+
+
+        }
+
+
+
+    }
+
+    .section__text-wrapper {
+        margin-bottom: 40px;
+
+
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-direction: row;
+        gap: 30px;
+
+
+    }
+
+    &__box {
+        box-shadow: $shadow-1;
+
+        background-color: $white;
+
+
+
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        gap: 15px;
+
+        min-width: 100%;
+        scroll-snap-align: start;
+
+
+        @include sm {
+            min-width: calc(50% - 20px);
+        }
+
+        @include lg {
+            min-width: calc(33% - 20px);
+        }
+
+    }
+
+
+    .box {
+
+
+
+
+
+        &__image {
+
+            min-width: max-content;
+
+            width: 80px;
+            height: 80px;
+
+
+
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50px;
+            }
+        }
+
+
+        &__header {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+        }
+
+        &__title {
+            color: $black;
+            font-weight: $fw-600;
+            font-size: $fs-3;
+        }
+
+
+    }
+
+    .wrapper__rating {
+        color: $deep-saffron;
+
+        display: flex;
+        gap: 10px;
+    }
+
+
+    .has-scrollbar {
+
+        @include lg {
+            &::-webkit-scrollbar {
+                display: none;
+
+
+
+            }
+
+        }
+
+    }
+
 }
