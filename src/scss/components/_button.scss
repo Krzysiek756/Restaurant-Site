@@ -85,6 +85,27 @@
 
     }
 
+    &--gallery {
+
+        padding: 8px 28px;
+
+
+
+        span {
+            font-size: $fs-4;
+
+
+        }
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+
+        }
+
+
+    }
+
 
 
 }
