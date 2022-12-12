@@ -36,21 +36,21 @@ footer.footer
                             li.wrapper__item Saturday: 10:00-16:00    
                     .footer__wrapper 
                         form.footer-form(action='')
-                            p.footer-list-title Book a Table
-                            .input-wrapper
+                            p.wrapper__subtitle Book a Table
+                            .input-wrapper__top
                                 input.input-field(type='text' name='full_name' required='' placeholder='Your Name' aria-label='Your Name')
                                 input.input-field(type='email' name='email_address' required='' placeholder='Email' aria-label='Email')
-                            .input-wrapper
+                            .input-wrapper__bottom
                                 select.input-field(name='total_person' aria-label='Total person')
-                                option(value='person') Person
-                                option(value='2 person') 2 Person
-                                option(value='3 person') 3 Person
-                                option(value='4 person') 4 Person
-                                option(value='5 person') 5 Person
+                                    option(value='person') Person
+                                    option(value='2 person') 2 Person
+                                    option(value='3 person') 3 Person
+                                    option(value='4 person') 4 Person
+                                    option(value='5 person') 5 Person
                                 input.input-field(type='date' name='booking_date' aria-label='Reservation date')
-                            textarea.input-field(name='message' required='' placeholder='Message' aria-label='Message')
-                            button.btn(type='submit') Book a Table
-    .footer-bottom 
+                            textarea.input-textarea(name='message' required='' placeholder='Message' aria-label='Message')
+                            button.btn.btn--gallery(type='submit') Book a Table
+.footer-bottom 
         h3.footer-bottom__title The site was written to document the experience 
             span Krzysztof Siek 2022
 

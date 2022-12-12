@@ -582,32 +582,33 @@
               </div>
               <div class="footer__wrapper"> 
                 <form class="footer-form" action="">
-                  <p class="footer-list-title">Book a Table</p>
-                  <div class="input-wrapper">
+                  <p class="wrapper__subtitle">Book a Table</p>
+                  <div class="input-wrapper__top">
                     <input class="input-field" type="text" name="full_name" required="" placeholder="Your Name" aria-label="Your Name">
                     <input class="input-field" type="email" name="email_address" required="" placeholder="Email" aria-label="Email">
                   </div>
-                  <div class="input-wrapper">
-                    <select class="input-field" name="total_person" aria-label="Total person"></select>
-                    <option value="person">Person</option>
-                    <option value="2 person">2 Person</option>
-                    <option value="3 person">3 Person</option>
-                    <option value="4 person">4 Person</option>
-                    <option value="5 person">5 Person</option>
+                  <div class="input-wrapper__bottom">
+                    <select class="input-field" name="total_person" aria-label="Total person">
+                      <option value="person">Person</option>
+                      <option value="2 person">2 Person</option>
+                      <option value="3 person">3 Person</option>
+                      <option value="4 person">4 Person</option>
+                      <option value="5 person">5 Person</option>
+                    </select>
                     <input class="input-field" type="date" name="booking_date" aria-label="Reservation date">
                   </div>
-                  <textarea class="input-field" name="message" required="" placeholder="Message" aria-label="Message"></textarea>
-                  <button class="btn" type="submit">Book a Table</button>
+                  <textarea class="input-textarea" name="message" required="" placeholder="Message" aria-label="Message"></textarea>
+                  <button class="btn btn--gallery" type="submit">Book a Table</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-bottom"> 
-        <h3 class="footer-bottom__title">The site was written to document the experience <span>Krzysztof Siek 2022</span></h3>
-      </div>
     </footer>
+    <div class="footer-bottom"> 
+      <h3 class="footer-bottom__title">The site was written to document the experience <span>Krzysztof Siek 2022</span></h3>
+    </div>
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
