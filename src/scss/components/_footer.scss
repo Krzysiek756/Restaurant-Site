@@ -1,6 +1,6 @@
 .footer {
 
-    background-image: url('/assets/img/footer-illustration.png');
+    background-image: url('../img/footer-illustration.png');
     position: relative;
     background-repeat: no-repeat;
     background-size: contain;
@@ -16,7 +16,7 @@
 
 
     &::after {
-        content: url('/assets/img/delivery-boy.svg');
+        content: url('../img/delivery-boy.svg');
         position: absolute;
         bottom: -11px;
         left: -160px;
