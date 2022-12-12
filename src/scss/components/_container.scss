@@ -1827,3 +1827,250 @@
         }
     }
 }
+
+
+/************************Section Blog************************/
+/************************Section Blog************************/
+/************************Section Blog************************/
+
+
+.blog {
+
+    background-color: #F9F6F0;
+
+    &__content {
+
+        padding: 80px 0;
+
+
+        @include sm {
+            margin: 0 15px;
+        }
+
+        @include md {
+
+            margin: 0 20px;
+
+
+        }
+
+        @include lg {
+            margin: 0;
+
+
+        }
+    }
+
+
+    .section__text-wrapper {
+        margin: unset;
+
+        height: 100px;
+
+        &__title {
+            max-width: 420px;
+
+            margin-bottom: 10px;
+
+        }
+
+        &__p {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+    }
+
+    &__article {
+        display: flex;
+        flex-direction: column;
+        background-color: $white;
+        text-shadow: $shadow-2;
+        gap: 30px;
+
+
+
+
+
+        flex-wrap: wrap;
+
+
+        @include md {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 20px;
+        }
+
+        @include lg {
+            margin: unset;
+        }
+
+
+
+
+    }
+
+    .article__wrapper {
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 25px;
+
+
+
+
+
+
+        @include md {
+            width: calc(50% - 50px);
+
+        }
+
+        @include lg {
+            width: calc(33% - 25px);
+        }
+
+
+
+    }
+
+    .article {
+
+
+
+        &__box {
+            padding: 0 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &__img {
+            position: relative;
+
+            aspect-ratio: 1 /0.65;
+
+
+
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            span {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                background-color: $dark-orange;
+                color: $white;
+                padding: 3px 12px;
+                font-weight: $fw-600;
+                text-transform: uppercase;
+                font-size: $fs-4;
+
+            }
+        }
+
+        &__autor {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+
+            .artilce__data,
+            .article__person {
+                display: flex;
+                gap: 10px;
+
+                align-items: center;
+
+                i {
+                    color: $dark-orange;
+                }
+
+                span {
+                    color: $black;
+                    font-size: $fs-5;
+                    font-weight: $fw-600;
+                }
+
+                transition: $transition-1;
+                cursor: pointer;
+
+
+                &:hover {
+
+                    transition: $transition-1;
+
+                    span {
+                        color: $dark-orange;
+                    }
+                }
+            }
+
+        }
+
+        &__title {
+
+            font-size: $fs-3;
+            line-height: 25px;
+            color: $black;
+            font-weight: $fw-600;
+            cursor: pointer;
+            transition: $transition-1;
+
+            position: relative;
+
+
+            &:hover {
+                transition: $transition-1;
+                opacity: 0.8;
+                text-decoration: underline;
+            }
+
+        }
+
+        &__read-more {
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: $black;
+
+
+            span {
+                font-size: $fs-4;
+                font-weight: $fw-600;
+
+
+
+            }
+
+            i {
+                font-size: 20px;
+                line-height: 0px;
+
+            }
+
+
+            &:hover {
+
+
+                gap: 20px;
+
+                span,
+                i {
+                    color: $dark-orange;
+
+                }
+
+
+            }
+        }
+
+
+    }
+}
