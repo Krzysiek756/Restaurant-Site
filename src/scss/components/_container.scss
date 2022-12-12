@@ -785,7 +785,7 @@
 
 .dishes {
 
-    background-color: #FFFFFF;
+    background-color: #F9F6F0;
 
     &__content {
 
@@ -855,10 +855,11 @@
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
+
         }
 
         @include lg {
-            justify-content: space-around;
+            justify-content: space-between;
 
         }
 
@@ -880,7 +881,21 @@
         box-shadow: var(--shadow-2);
 
 
+        @include md {
+            width: calc(50% - 20px);
+        }
 
+        @include lg {
+
+            width: calc(33% - 30px);
+
+
+        }
+
+        @include xl {
+            width: unset;
+
+        }
 
 
         position: relative;
@@ -900,9 +915,6 @@
 
 
 
-
-
-
         &__banner {
 
             position: relative;
@@ -913,8 +925,8 @@
 
         &__img {
 
-            width: 280px;
-            height: 280px;
+            width: 260px;
+            height: 260px;
 
             img {
                 object-fit: cover;
@@ -1863,9 +1875,12 @@
 
 
     .section__text-wrapper {
-        margin: unset;
 
-        height: 100px;
+
+        margin-bottom: 80px;
+
+
+
 
         &__title {
             max-width: 420px;
@@ -1897,11 +1912,7 @@
         @include md {
             flex-direction: row;
             justify-content: space-between;
-            margin: 0 20px;
-        }
 
-        @include lg {
-            margin: unset;
         }
 
 
