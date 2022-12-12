@@ -6,6 +6,8 @@ html {
     font-family: $ff-roboto;
     font-size: 10px;
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -15,7 +17,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     box-sizing: border-box;
-    height: 1600px;
+
 
 }
 
