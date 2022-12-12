@@ -15,21 +15,21 @@
     <link rel="stylesheet" href="src/scss/bootstrap-grid.css">
     <link rel="stylesheet" href="assets/css/main.min.css">
   </head>
-  <body>
+  <body id="top">
     <!--HEADER-->
     <header class="header" data-header="">
       <div class="container"> 
         <div class="row">
           <div class="header__content">
-            <div class="header__logo"> <a href="index.html"> 
+            <div class="header__logo"> <a href="#"> 
                 <div class="logo__title">Foodie </div><span>.</span></a></div>
             <div class="menu" data-navbar="">
               <div class="menu__list">
-                <div class="menu__item"> <a href="#home" data-nav-link="">Home</a></div>
+                <div class="menu__item"> <a href="#" data-nav-link="">Home</a></div>
                 <div class="menu__item"> <a href="#about" data-nav-link="">About Us</a></div>
-                <div class="menu__item"> <a href="$food-menu" data-nav-link="">Shop</a></div>
+                <div class="menu__item"> <a href="#food-menu" data-nav-link="">Shop</a></div>
                 <div class="menu__item"> <a href="#blog" data-nav-link="">Blog</a></div>
-                <div class="menu__item"> <a href="#" data-nav-link="">Contact Us    </a></div>
+                <div class="menu__item"> <a href="#footer" data-nav-link="">Contact Us    </a></div>
               </div>
             </div>
             <div class="header__btn-group">
@@ -172,7 +172,7 @@
       </div>
     </div>
     <!--About-->
-    <div class="about">     
+    <div class="about" id="about">     
       <div class="container"> 
         <div class="row"> 
           <div class="col-12 col-lg-12"> 
@@ -208,7 +208,7 @@
       </div>
     </div>
     <!--Dishes Section-->
-    <div class="dishes"> 
+    <div class="dishes" id="food-menu"> 
       <div class="container"> 
         <div class="row"> 
           <div class="col-12 col-lg-12"> 
@@ -494,7 +494,7 @@
       </div>
     </div>
     <!--Blog Section-->
-    <div class="blog"> 
+    <div class="blog" id="blog"> 
       <div class="container"> 
         <div class="row">   
           <div class="col-12 col-lg-12">
@@ -549,7 +549,7 @@
     </div>
     <!--FOOTER-->
     <!--Footer-->
-    <footer class="footer"> 
+    <footer class="footer" id="footer"> 
       <div class="container"> 
         <div class="row"> 
           <div class="col-12 col-lg-12"> 
@@ -609,6 +609,8 @@
     <div class="footer-bottom"> 
       <h3 class="footer-bottom__title">The site was written to document the experience <span>Krzysztof Siek 2022</span></h3>
     </div>
+    <!--Bact to top-->
+    <div class="back-btn"> <a class="back-top-btn" href="#top" arial-label="Back to top" data-back-top-btn> <i class="ri-arrow-up-circle-fill"></i></a></div>
     <script src="assets/js/main.min.js"></script>
   </body>
 </html>
