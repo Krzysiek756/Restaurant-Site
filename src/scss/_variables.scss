@@ -1,73 +1,95 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;500;700&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap');
+
+//font-family: 'DM Sans', sans-serif;
+//font-family: 'Forum', cursive;
 
 
-
-$rich-black-fogra-29: hsl(210, 26%, 7%);
-$champagne-pink_20: hsla(23, 61%, 86%, 0.2);
-$independence_30: hsla(245, 17%, 29%, 0.3);
-$gray-x-11-gray: hsl(0, 0%, 73%);
-$champagne-pink: hsl(23, 61%, 86%);
-$spanish-gray: hsl(0, 0%, 60%);
-$sonic-silver: hsl(0, 0%, 47%);
-$deep-saffron: hsl(32, 100%, 59%);
-$dark-orange: hsl(28, 100%, 58%);
-$desert-sand: hsl(23, 49%, 82%);
-$isabelline: hsl(38, 44%, 96%);
-$gainsboro: hsl(0, 0%, 87%);
-$tangerine: hsl(31, 84%, 50%);
-$cinnabar: hsl(3, 90%, 55%);
-$black_95: hsla(0, 0%, 0%, 0.95);
-$cultured: hsl(0, 0%, 93%);
-$white: hsl(0, 0%, 100%);
-$black: hsl(0, 0%, 0%);
-$onyx: hsl(0, 0%, 27%);
-
-/**
-     * typography
-     */
-
-$ff-shadows-into-light: 'Shadows Into Light', cursive;
-$ff-roboto: 'Roboto', sans-serif;
-$ff-rubik: 'Rubik', sans-serif;
+//// Colors
 
 
+$gold-crayola: hsl(38, 61%, 73%);
+$quick-silver: hsla(0, 0%, 65%, 1);
+$davys-grey: hsla(30, 3%, 34%, 1);
+$smoky-black-1: hsla(40, 12%, 5%, 1);
+$smoky-black-2: hsla(30, 8%, 5%, 1);
+$smoky-black-3: hsla(0, 3%, 7%, 1);
+$eerie-black-1: hsla(210, 4%, 9%, 1);
+$eerie-black-2: hsla(210, 4%, 11%, 1);
+$eerie-black-3: hsla(180, 2%, 8%, 1);
+$eerie-black-4: hsla(0, 0%, 13%, 1);
+$white: hsla(0, 0%, 100%, 1);
+$white-alpha-20: hsla(0, 0%, 100%, 0.2);
+$white-alpha-10: hsla(0, 0%, 100%, 0.1);
+$black: hsla(0, 0%, 0%, 1);
+$black-alpha-80: hsla(0, 0%, 0%, 0.8);
+$black-alpha-15: hsla(0, 0%, 0%, 0.15);
 
 
+//// Gradient color
 
 
-$fs-1: 3.2rem;
-$fs-2: 2.2rem;
-$fs-3: 1.8rem;
-$fs-4: 1.4rem;
-$fs-5: 1.2rem;
+$loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%, transparent 66.66% 75%);
+$gradient-1: linear-gradient(to top, hsla(0, 0%, 0%, 0.9), hsla(0, 0%, 0%, 0.7), transparent);
 
-$fw-500: 500;
-$fw-600: 600;
-$fw-700: 700;
 
-/**
-     * spacing
-     */
+////Typography
 
-$section-padding: 60px;
 
-/**
-     * shadow
-     */
+$fontFamily-forum: 'Forum', cursive;
+$fontFamily-dm_sans: 'DM Sans', sans-serif;
 
-$shadow-1: 0 1px 4px hsla(0, 0%, 0%, 0.2);
-$shadow-2: 0 1px 2px hsla(0, 0%, 0%, 0.2);
+$fontSize-display-1: calc(1.3rem + 6.7vw);
+$fontSize-headline-1: calc(2rem + 2.5vw);
+$fontSize-headline-2: calc(1.3rem + 2.4vw);
+$fontSize-title-1: calc(1.6rem + 1.2vw);
+$fontSize-title-2: 2.2rem;
+$fontSize-title-3: 2.1rem;
+$fontSize-title-4: calc(1.6rem + 1.2vw);
+$fontSize-body-1: 2.4rem;
+$fontSize-body-2: 1.6rem;
+$fontSize-body-3: 1.8rem;
+$fontSize-body-4: 1.6rem;
+$fontSize-label-1: 1.4rem;
+$fontSize-label-2: 1.2rem;
 
-/**
-     * transition
-     */
+$weight-regular: 400;
+$weight-bold: 700;
 
-$transition-1: 0.25s ease;
-$transition-2: 0.5s ease;
+$lineHeight-1: 1em;
+$lineHeight-2: 1.2em;
+$lineHeight-3: 1.5em;
+$lineHeight-4: 1.6em;
+$lineHeight-5: 1.85em;
+$lineHeight-6: 1.4em;
 
-/**
-     * clip path
-     */
+$letterSpacing-1: 0.15em;
+$letterSpacing-2: 0.4em;
+$letterSpacing-3: 0.2em;
+$letterSpacing-4: 0.3em;
+$letterSpacing-5: 3px;
 
-$clip-path-1: polygon(0 40%, 100% 0%, 100% 100%, 0 100%);
-$clip-path-2: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+
+//Spacing
+
+$section-space: 70px;
+
+
+//Shadow
+
+
+$shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
+
+
+//Border Radius
+
+
+$radius-24: 24px;
+$radius-circle: 50%;
+
+
+//Transition
+
+
+$transition-1: 250ms ease;
+$transition-2: 500ms ease;
+$transition-3: 1000ms ease;
