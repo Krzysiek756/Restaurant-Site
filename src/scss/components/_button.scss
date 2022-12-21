@@ -1,0 +1,113 @@
+//Button
+
+.btn {
+    background-color: $dark-orange;
+    color: $white;
+    font-family: $ff-rubik;
+    font-size: $fs-4;
+    font-weight: $fw-500;
+    padding: 12px 35px;
+    transition: $transition-2;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-transform: capitalize;
+
+    width: fit-content;
+
+    cursor: pointer;
+
+    &--header {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -1px;
+            left: 20px;
+            width: 1px;
+            height: 1px;
+            transform: translate(-50%, 51%) scale(var(--scale, 1));
+            border-radius: 50%;
+            background-color: $rich-black-fogra-29;
+            z-index: -1;
+            transition: $transition-2;
+
+
+        }
+
+        &:hover::after {
+            --scale: 500;
+        }
+    }
+
+    &--hero {
+
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+
+    }
+
+    &--dishes {
+
+        &.active {
+            background-color: $dark-orange;
+            color: $white;
+        }
+
+        color:$black;
+        background-color: $white;
+    }
+
+    &--menu {
+
+        background-color: $cinnabar;
+        opacity: 0;
+
+
+        transform: $transition-1;
+
+
+
+        &:hover {
+            background-color: $dark-orange;
+            color: $white;
+
+            transform: $transition-1;
+        }
+
+
+    }
+
+    &--gallery {
+
+        padding: 8px 24px;
+
+        width: fit-content;
+
+
+
+        span {
+            font-size: $fs-4;
+
+
+        }
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+
+        }
+
+
+    }
+
+
+
+}
