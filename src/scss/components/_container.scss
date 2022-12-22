@@ -1,12 +1,13 @@
 .has-scrollbar {
-
-
     display: flex;
     flex-direction: row;
     gap: 20px;
     overflow-x: auto;
     scroll-snap-type: inline mandatory;
-    padding-bottom: 40px;
+
+
+
+
 
     &::-webkit-scrollbar {
         height: 12px;
@@ -395,7 +396,9 @@
     &__content {
         overflow: hidden;
 
-        padding: 60px 0;
+        padding: 60px 15px;
+
+
 
 
         @include sm {
@@ -422,9 +425,13 @@
     &__item {
 
 
+
+
         @include xl {
             right-left: 25px;
         }
+
+        padding-bottom: 40px;
     }
 
 
@@ -435,8 +442,8 @@
         justify-content: center;
         text-align: center;
         gap: 20px;
-        padding: 40px 0;
-        max-width: 360px;
+        padding: 40px 0px;
+        max-width: 360px !important;
         position: relative;
 
 
@@ -445,6 +452,11 @@
         background-color: $white;
         box-shadow: $shadow-2;
         z-index: 1;
+
+
+
+
+
 
 
         min-width: 100%;
@@ -547,11 +559,13 @@
 
 .about {
 
+    scroll-margin-top: 120px;
+
     &__content {
 
         display: flex;
         flex-direction: column;
-        padding: 120px 0;
+        padding: 40px 0;
 
 
 
@@ -785,13 +799,15 @@
 
 .dishes {
 
+    scroll-margin-top: 60px;
+
     background-color: #F9F6F0;
 
     &__content {
 
         display: flex;
         flex-direction: column;
-        padding: 120px 0;
+        padding: 80px 0;
 
 
 
@@ -1266,14 +1282,14 @@
 
 
         @include md {
-            width: 140px;
+            width: 160px;
             height: 140px;
         }
 
 
 
-        width: 220px;
-        height: 220px;
+        width: 260px;
+        height: 240px;
 
 
 
@@ -1297,7 +1313,7 @@
 
     &__content {
 
-        padding: 80px 0 0 0;
+        padding: 40px 0 0 0;
 
 
         @include sm {
@@ -1519,7 +1535,7 @@
     &__content {
         display: flex;
         flex-direction: column;
-        padding: 80px 0;
+        padding: 60px 0;
 
 
         @include sm {
@@ -1568,6 +1584,14 @@
         gap: 30px;
 
 
+        margin-left: -15px;
+        width: calc(100% + 30px);
+        padding: 0 15px;
+
+        padding-bottom: 40px;
+
+
+
     }
 
     &__box {
@@ -1604,15 +1628,12 @@
 
         &__image {
 
-            // min-width: max-content;
 
             max-width: 80px;
             max-height: 80px;
 
             border-radius: 50px;
-
-
-
+            overflow: hidden;
 
             img {
                 width: 100%;
@@ -1653,8 +1674,6 @@
             &::-webkit-scrollbar {
                 display: none;
 
-
-
             }
 
         }
@@ -1672,7 +1691,6 @@
 .gallery {
 
     background-color: #F9F6F0;
-
 
 
     &__content {
@@ -1857,10 +1875,13 @@
 .blog {
 
     background-color: #F9F6F0;
+    scroll-margin-top: 60px; // ////!!!!!!!!!!!!!!!!!!!!
+
+
 
     &__content {
 
-        padding: 120px 0;
+        padding: 80px 0;
 
 
         @include sm {
